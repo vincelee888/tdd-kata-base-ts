@@ -1,12 +1,11 @@
-import { add } from '../app/foo';
-
 import * as chai from 'chai';
 
-const expect = chai.expect;
-describe('My math library', () => {
+import foo from '../app/foo';
 
-  it('should be able to add things correctly' , () => {
-    expect(add(3,4)).to.equal(7);
+const { expect } = chai;
+
+describe('Foo', () => {
+  it('should return bar', () => {
+    expect(foo()).to.equal('bar');
   });
-
 });
